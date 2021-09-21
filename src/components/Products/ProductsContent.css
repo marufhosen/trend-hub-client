@@ -1,0 +1,33 @@
+.product-name {
+  font-size: large;
+  font-weight: bold;
+}
+.product-des {
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: slategrey;
+}
+.card-btn {
+  background-color: #24005e;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  font-size: 13px;
+  border: 1px solid #24005e;
+  text-decoration: none;
+}
+.card-btn:hover {
+  background-color: white;
+  color: #24005e;
+  border: 1px dotted #24005e;
+}
+.cart-icon {
+  margin-left: 5px;
+}
+.star-icon {
+  font-size: 10px;
+  color: slategray;
+}
+.star-review {
+  color: orange;
+}

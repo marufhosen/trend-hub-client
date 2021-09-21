@@ -1,0 +1,13 @@
+.banner-container {
+  margin-bottom: 100px;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+}
+.search-item {
+  border-radius: 0;
+}

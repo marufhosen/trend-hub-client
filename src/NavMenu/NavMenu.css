@@ -1,0 +1,40 @@
+.nav-menu {
+  background-color: #fffdf2;
+}
+.nav-brand {
+  text-decoration: none;
+  color: black;
+}
+.nav-brand sub {
+  font-size: 10px;
+}
+.nav-item {
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+  line-height: 3;
+  font-size: 15px;
+}
+.nav-item:hover {
+  color: #24005e;
+}
+.nav-item Button {
+  border-radius: 0;
+}
+.btn {
+  background: #24005e;
+  border: none;
+}
+.btn:hover {
+  background: #24005e;
+  border: none;
+}
+.logged-user-name{
+  margin: 10px 0px 0px 15px;
+  font-weight: bold;
+}
+@media (min-width: 600px) {
+  .nav-item {
+    /* text-align: center; */
+  }
+}

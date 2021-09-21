@@ -1,0 +1,42 @@
+.cart-container {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.quantity-input {
+  display: inline-block;
+  margin: 30px 0 20px 0;
+}
+.quantity {
+  height: 100%;
+  width: 50px;
+  font-size: 21px;
+  background: #24005e;
+  color: #ffff;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.quantity-display {
+  width: 80px;
+  font-size: 21px;
+  text-align: center;
+  border: none;
+}
+.quantity-display:focus {
+  outline: 0;
+}
+.pd-price {
+  margin-bottom: 20px;
+}
+.order-placement-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #24005e;
+  padding: 10px;
+}
+@media (min-width: 600px) {
+  .cart-container {
+    text-align: left;
+  }
+}

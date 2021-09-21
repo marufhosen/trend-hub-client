@@ -1,0 +1,23 @@
+.admin-nav {
+  background-color: #24005e;
+  color: white;
+}
+.admin-nav-item {
+  color: white;
+  cursor: pointer;
+}
+.add-prdct-btn {
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+}
+.data-input {
+  border-radius: 0;
+  padding: 10px;
+}
+
+@media (min-width: 590px) {
+  .admin-nav {
+    height: 100vh;
+  }
+}

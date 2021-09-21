@@ -1,0 +1,24 @@
+.form-container {
+  margin-top: 50px;
+}
+.input-form {
+  max-width: 60%;
+  margin: auto;
+  border: 1px solid #24005e;
+  padding: 50px;
+}
+.login-btn {
+  width: 100%;
+}
+.sign-in {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.login-form-title{
+    text-align: center;
+}
+.create-new{
+    margin-top: 30px;
+    font-size: 15px;
+}
