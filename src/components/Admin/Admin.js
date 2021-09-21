@@ -47,7 +47,7 @@ const Admin = () => {
 
   const handleOnSubmit = (data) => {
     const productData = { ImageUrl: imgUrl, ...newProduct };
-    const url = "http://localhost:5000/addProducts";
+    const url = "https://trend-hub-server.herokuapp.com/addProducts";
     fetch(url, {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -60,7 +60,7 @@ const Admin = () => {
 
   //handle view products for manages
   useEffect(() => {
-    fetch("http://localhost:5000/newProducts")
+    fetch("https://trend-hub-server.herokuapp.com/newProducts")
       .then((res) => res.json())
       .then((data) => setManageProduct(data));
   }, []);

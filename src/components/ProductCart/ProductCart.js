@@ -11,7 +11,7 @@ const ProductCart = () => {
   const [count, setCount] = useState(1);
   const { productId } = useParams();
   useEffect(() => {
-    fetch("http://localhost:5000/product/" + productId)
+    fetch("https://trend-hub-server.herokuapp.com/product/" + productId)
       .then((res) => res.json())
       .then((data) => setCartProduct(data));
   }, [productId]);
@@ -31,7 +31,7 @@ const ProductCart = () => {
       ...loggedInuser,
     };
     // console.log(orderedProduct);
-    const url = "http://localhost:5000/orderedProducts";
+    const url = "https://trend-hub-server.herokuapp.com/orderedProducts";
     fetch(url, {
       method: "POST",
       headers: { "content-type": "application/json" },

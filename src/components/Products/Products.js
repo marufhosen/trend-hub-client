@@ -5,7 +5,7 @@ import ProductsContent from "./ProductsContent";
 const Products = () => {
   const [addedProducts, setAddedProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/newProducts")
+    fetch("https://trend-hub-server.herokuapp.com/newProducts")
       .then((res) => res.json())
       .then((data) => setAddedProducts(data));
   }, []);

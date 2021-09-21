@@ -8,7 +8,7 @@ const Orders = () => {
   const [loggedInuser, setLoggedInUser] = useContext(userContext);
   const [orderedInfo, setOrderedInfo] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/ordered?email=" + loggedInuser.email, {
+    fetch("https://trend-hub-server.herokuapp.com/ordered?email=" + loggedInuser.email, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
