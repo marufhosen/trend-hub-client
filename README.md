@@ -18,4 +18,4 @@
 - Express JS
 - MongoDB Atlas
 
-**Backend Repo:** [TrendHub](https://trend-hub-server.herokuapp.com)
+**Backend Repo:** [TrendHub](https://github.com/marufhosen/trend-hub-server)
