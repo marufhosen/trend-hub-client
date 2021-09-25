@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Col, Container, Button, Image, Row } from "react-bootstrap";
 import { useParams } from "react-router";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { userContext } from "../../App";
 import "./ProductCart.css";
 
@@ -24,6 +24,7 @@ const ProductCart = () => {
   const handleOnBlurQuantity = (e) => {
     // console.log(e.target.value);
   };
+  delete cartProduct["_id"];
   const handleOrderProduct = () => {
     const orderedProduct = {
       quantity: count,
@@ -56,7 +57,7 @@ const ProductCart = () => {
                 </button>
                 <input
                   className="quantity-display"
-                  onBlur={handleOnBlurQuantity}
+                  onChange={handleOnBlurQuantity}
                   name="quantity"
                   type="text"
                   value={count}
@@ -69,13 +70,12 @@ const ProductCart = () => {
                 Price: {cartProduct.productPrice * count} $
               </p>
             </div>
-            <Link
+            <Button
               onClick={handleOrderProduct}
               className="order-placement-btn"
-              to="#"
             >
               Order Placement
-            </Link>
+            </Button>
           </Col>
           {/* <Col sm>sm=true</Col> */}
         </Row>
