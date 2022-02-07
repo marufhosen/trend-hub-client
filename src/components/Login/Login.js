@@ -127,12 +127,12 @@ const Login = () => {
             <p style={{ color: "green" }}>Successfully login</p>
           )}
           <p className="create-new">
-            Don't have an account?{" "}
+            {createUser ? "Have an account?" : "Don't have an account?"}
             <span
               onClick={() => setCreateUser(!createUser)}
               className="sign-in"
             >
-              Create an account
+              {createUser ? "Login" : "Create an account"}
             </span>
           </p>
         </div>
